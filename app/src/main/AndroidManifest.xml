@@ -21,7 +21,7 @@
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.bukodavi.myapplication"></action>
+                <action android:name="com.example.bukodavi.staticEvent"></action>
             </intent-filter>
         </receiver>
     </application>

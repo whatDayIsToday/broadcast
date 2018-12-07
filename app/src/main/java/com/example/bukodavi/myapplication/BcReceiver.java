@@ -12,10 +12,9 @@ public class BcReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
             /*Broadcast elkapása, és értesítés */
-        Bundle bundle = intent.getExtras();
 
-        Toast.makeText(context,"Új levél érkezett ", Toast.LENGTH_LONG).show();
 
+       // Toast.makeText(context,"Új levél érkezett ", Toast.LENGTH_LONG).show();
 
 
     }
