@@ -4,6 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.Fragment;
+import android.view.View;
 import android.widget.Toast;
 
 
@@ -15,7 +16,6 @@ public class BcReceiver extends BroadcastReceiver {
         //segédváltozók létrehozása teszt jelleggel
 
         String mailFrom = "teszt@teszt.com";
-
         String mailSubject = "Thank you!";
 
             //Broadcast elkapása, és értesítés
@@ -25,8 +25,8 @@ public class BcReceiver extends BroadcastReceiver {
         //Abban az esetben ha az aszinkron üzenet hozzánk tartozik akkor
         if (intent.getAction().equals(MainActivity.myIntent)){
             Toast.makeText(context,"Üzenet érkezett",Toast.LENGTH_LONG).show();
-            Toast.makeText(context,"Melynek feladója: " + mailSubject.getText(),Toast.LENGTH_SHORT).show();
-            Toast.makeText(context,"subject is" + mailSubject,Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"Melynek feladója: " + mailFrom,Toast.LENGTH_SHORT).show();
+            Toast.makeText(context,"tárgya: " + mailSubject,Toast.LENGTH_SHORT).show();
         }
 
     }

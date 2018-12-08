@@ -21,23 +21,5 @@
             android:layout_marginTop="300dp"
             android:text="Send Static intent" />
 
-        <EditText
-            android:id="@+id/mailFrom"
-            android:layout_width="500dp"
-            android:layout_height="64dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Kitől akarsz levelet kapni?" />
-
-        <EditText
-            android:id="@+id/mailSubject"
-            android:layout_width="195dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="tárgy" />
-
     </FrameLayout>
 </LinearLayout>
