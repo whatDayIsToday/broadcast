@@ -21,14 +21,16 @@ public class BlankFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View staticView = inflater.inflate(R.layout.activity_main, container, false);
+        // létrehozunk egy új nézetet staticView néven, majd megadjuk neki, hogy a fragment_blank xml designből dolgozzon.
+        View staticView = inflater.inflate(R.layout.fragment_blank, container, false);
 
-        // Gomb beallitása, hogy tartalmat küldjön a statikus kezelőnek
+        // Gomb beallitása, hogy tartalmat küldjön a statikus kezelőnek (onclicklistener) vizsgálja, hogy "kattintva" volt -e a gomb
         staticView.findViewById(R.id.staticBtn).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Új intent létrehozása aszinkMess néven, és megadjuk neki, hogy a MainActivity osztályunkből vegye az ott létrehozott myIntent változót.
                 Intent aszinkMess = new Intent(MainActivity.myIntent);
+                //beállítjuk az aszinkMess változónkat, hogy csak az ebből a packageből érkező activitást kezelje le.
                 aszinkMess.setPackage("com.example.bukodavi.myapplication");
                 getActivity().sendBroadcast(aszinkMess);
             }
