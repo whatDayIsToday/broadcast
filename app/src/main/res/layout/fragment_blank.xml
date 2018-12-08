@@ -15,11 +15,10 @@
 
         <Button
             android:id="@+id/staticBtn"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="300dp"
-            android:text="Send Static intent" />
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="200dp"
+            android:text="Esemény indítása" />
 
     </FrameLayout>
 </LinearLayout>
